@@ -56,9 +56,5 @@ function olustur() {
                 editButton.innerText = 'Kaydet';
             }
         };
-
-        
-
-
     }
 }
