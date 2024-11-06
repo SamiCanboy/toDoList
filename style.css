@@ -1,0 +1,10 @@
+.editbutton{
+    border-radius: 0px 200px 0px 0px;
+}
+.deletebutton{
+    border-radius: 0px 0px 200px 0px;
+}
+.checkbox{
+    border-radius: 200px 0px 0px 200px;
+    height: 100%;
+}

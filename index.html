@@ -9,6 +9,7 @@
 </head>
 
 <body class="bg-warning text-gray">
+    
     <script src="script.js"></script>
     <header>
         <div class="container">
@@ -28,11 +29,23 @@
             <div class="bg-dark p-3 rounded-4">
                 <form>
                     <div class="input-group input-group-lg rounded">
-                        <input type="text" class='form-control' id="input-title" placeholder="Başlık Giriniz..." aria-describedby='olusturbutton'>
-                        <button type="button" class="btn btn-success rounded-top-right-" id="olusturbutton" onclick="olustur()">Oluştur</button>
+                        <input 
+                        type="text" 
+                        class='form-control' 
+                        id="input-title" 
+                        placeholder="toDo Giriniz..." 
+                        aria-describedby='olusturbutton'
+                        style="border-radius: 200px 0px 0px 200px;">
+                        <button 
+                        type="button" 
+                        class="btn btn-success rounded-top-right-" 
+                        id="olusturbutton" 
+                        onclick="olustur()"
+                        style="border-radius: 200px 200px 200px 200px; display: absolute; margin-left: -30px; z-index: 99;"
+                        >Oluştur</button>
                     </div>
                 </form>
-                <div class="contents input-group">
+                <div onload="olustur()" class="contents input-group">
                     
                 </div>
             </div>
