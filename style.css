@@ -1,10 +1,49 @@
 .editbutton{
     border-radius: 0px 200px 0px 0px;
+    margin: 0;
 }
 .deletebutton{
     border-radius: 0px 0px 200px 0px;
+    margin: 0;
 }
-.checkbox{
+
+.checkbox{ 
+    
+    background: transparent;
+    background-color: white;
     border-radius: 200px 0px 0px 200px;
+    height: 61px;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+.flags{
+    display: none;
+    z-index: 9;
+    
+    
+    
+}
+.redflag{
+    height: 21px;
+    width: 40px;
+    border-radius: 100% 0% 0% 30%;
+    
+}
+.yellowflag{
+    height: 21px;
+    width: 40px;
+    
+    
+    
+}
+.greenflag{
+    height: 21px;
+    width: 40px;
+    border-radius: 30% 0% 0% 100%;
+    
     
 }
