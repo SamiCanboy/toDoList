@@ -12,7 +12,7 @@
     background: transparent;
     background-color: white;
     border-radius: 200px 0px 0px 200px;
-    height: 61px;
+    height: 60px;
     border: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -20,7 +20,7 @@
     border: none;
     outline: none;
 }
-.flags{
+#flags{
     display: none;
     z-index: 9;
     
@@ -28,22 +28,21 @@
     
 }
 .redflag{
-    height: 21px;
+    height: 20px;
     width: 40px;
     border-radius: 100% 0% 0% 30%;
     
 }
 .yellowflag{
-    height: 21px;
+    height: 20px;
     width: 40px;
-    
-    
-    
 }
 .greenflag{
     height: 21px;
     width: 40px;
     border-radius: 30% 0% 0% 100%;
-    
-    
+
+}
+@media (max-width: 767.98px) {
+
 }

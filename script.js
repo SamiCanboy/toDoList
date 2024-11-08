@@ -17,8 +17,9 @@ function olustur() {
         let redflag = document.createElement('button')
         let yellowflag = document.createElement('button')
         let greenflag = document.createElement('button')
+    
         
-        todoDiv.className = ' d-flex bg-light rounded-5 mt-2 mb-2 align-items-center pt-0 tododiv'
+        todoDiv.className = ' d-flex bg-light rounded-5 mt-2 mb-2 align-items-center pt-0 tododiv ms-2'
         checkboxDiv.className = 'col'
         contentDiv.className = 'col ps-2 pe-2'
         buttonDiv.className = 'col btn-group-vertical'
@@ -71,7 +72,7 @@ function olustur() {
         };
         checkbox.onclick = function () {
             this.style.display = 'none'
-            document.getElementById('flags').style.display = 'flex';
+            flags.style.display = 'flex'
         };
         
         redflag.onclick = function() {
@@ -89,6 +90,7 @@ function olustur() {
             checkbox.style.display = 'flex'
             checkbox.className = 'btn mt-0 btn-lg checkbox bg-success'
         }
+        
         
         
     }
