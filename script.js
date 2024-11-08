@@ -6,7 +6,7 @@ function olustur() {
    
     else{
         let todoDiv = document.createElement('div')
-        let todo = document.createElement('h3')
+        let todo = document.createElement('h5')
         let checkbox = document.createElement('input')
         let deleteButton = document.createElement('button')
         let editButton = document.createElement('button')
