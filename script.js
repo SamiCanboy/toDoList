@@ -19,8 +19,8 @@ function olustur() {
         let greenflag = document.createElement('button')
     
         
-        todoDiv.className = ' d-flex bg-light rounded-5 mt-2 mb-2 align-items-center pt-0 tododiv ms-2'
-        checkboxDiv.className = 'col'
+        todoDiv.className = ' d-flex bg-light rounded-6 mt-2 mb-2 align-items-center pt-0 tododiv ms-2'
+        checkboxDiv.className = 'col checkboxDiv'
         contentDiv.className = 'col ps-2 pe-2'
         buttonDiv.className = 'col btn-group-vertical buttondiv'
 
@@ -33,15 +33,17 @@ function olustur() {
         yellowflag.className = 'btn btn-warning d-flex yellowflag'
         greenflag.className = 'btn btn-success d-flex greenflag'
 
-        todo.className = 'text-nowrap'
+        todo.className = 'todo'
         deleteButton.className = 'btn btn-danger btn-sm d-flex deletebutton'
         editButton.className = 'btn btn-warning btn-sm d-flex editbutton'
         checkbox.className = 'btn mt-0 checkbox bg-primary'
-        
+
+        todoDiv.style.borderRadius = '50px'
         deleteButton.type = 'button'
         editButton.type = 'button'
         checkbox.type = 'checkbox'
         todo.textContent = todoData
+        todoDiv.style.borderRadius = '50px 50px 50px 50px'
 
         flags.appendChild(redflag)
         flags.appendChild(yellowflag)
@@ -71,27 +73,24 @@ function olustur() {
             }
         };
         checkbox.onclick = function () {
-            this.style.display = 'none'
+            checkboxDiv.style.display = 'none'
             flags.style.display = 'flex'
         };
         
         redflag.onclick = function() {
             flags.style.display = 'none'
-            checkbox.style.display = 'flex'
+            checkboxDiv.style.display = 'flex'
             checkbox.className = 'btn mt-0 checkbox bg-danger'
         }
         yellowflag.onclick = function() {
             flags.style.display = 'none'
-            checkbox.style.display = 'flex'
+            checkboxDiv.style.display = 'flex'
             checkbox.className = 'btn mt-0 checkbox bg-warning'
         }
         greenflag.onclick = function() {
             flags.style.display = 'none'
-            checkbox.style.display = 'flex'
+            checkboxDiv.style.display = 'flex'
             checkbox.className = 'btn mt-0 checkbox bg-success'
         }
-        
-        
-        
     }
 }
