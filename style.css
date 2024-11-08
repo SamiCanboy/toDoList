@@ -23,15 +23,11 @@
 #flags{
     display: none;
     z-index: 9;
-    
-    
-    
 }
 .redflag{
     height: 20px;
     width: 40px;
     border-radius: 100% 0% 0% 30%;
-    
 }
 .yellowflag{
     height: 20px;
