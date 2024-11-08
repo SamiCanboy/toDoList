@@ -1,18 +1,23 @@
 .editbutton{
     border-radius: 0px 200px 0px 0px;
     margin: 0;
+    height: 30px;
+    
 }
 .deletebutton{
     border-radius: 0px 0px 200px 0px;
     margin: 0;
-}
-
-.checkbox{ 
+    height: 30px;
     
+}
+.buttondiv{
+    gap:1px;
+}
+.checkbox{ 
     background: transparent;
-    background-color: white;
     border-radius: 200px 0px 0px 200px;
     height: 60px;
+    width: 20px;
     border: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -23,6 +28,7 @@
 #flags{
     display: none;
     z-index: 9;
+    width: 40px;
 }
 .redflag{
     height: 20px;
@@ -40,5 +46,24 @@
 
 }
 @media (max-width: 767.98px) {
-
+    .redflag{
+        height: 15px;
+    }
+    .yellowflag{
+        height: 15px;
+    }
+    .greenflag{
+        height: 15px;
+    }
+    .editbutton{
+        height: 23px;
+        z-index: 9;
+    }
+    .deletebutton{
+        height: 22px;
+        
+    }
+    .checkbox{
+        height: 45px;
+    }
 }

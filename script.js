@@ -22,7 +22,7 @@ function olustur() {
         todoDiv.className = ' d-flex bg-light rounded-5 mt-2 mb-2 align-items-center pt-0 tododiv ms-2'
         checkboxDiv.className = 'col'
         contentDiv.className = 'col ps-2 pe-2'
-        buttonDiv.className = 'col btn-group-vertical'
+        buttonDiv.className = 'col btn-group-vertical buttondiv'
 
         deleteButton.innerText = 'Sil'
         editButton.innerText = 'Değiştir'
@@ -36,7 +36,7 @@ function olustur() {
         todo.className = 'text-nowrap'
         deleteButton.className = 'btn btn-danger btn-sm d-flex deletebutton'
         editButton.className = 'btn btn-warning btn-sm d-flex editbutton'
-        checkbox.className = 'btn mt-0 btn-lg checkbox bg-primary'
+        checkbox.className = 'btn mt-0 checkbox bg-primary'
         
         deleteButton.type = 'button'
         editButton.type = 'button'
@@ -78,17 +78,17 @@ function olustur() {
         redflag.onclick = function() {
             flags.style.display = 'none'
             checkbox.style.display = 'flex'
-            checkbox.className = 'btn mt-0 btn-lg checkbox bg-danger'
+            checkbox.className = 'btn mt-0 checkbox bg-danger'
         }
         yellowflag.onclick = function() {
             flags.style.display = 'none'
             checkbox.style.display = 'flex'
-            checkbox.className = 'btn mt-0 btn-lg checkbox bg-warning'
+            checkbox.className = 'btn mt-0 checkbox bg-warning'
         }
         greenflag.onclick = function() {
             flags.style.display = 'none'
             checkbox.style.display = 'flex'
-            checkbox.className = 'btn mt-0 btn-lg checkbox bg-success'
+            checkbox.className = 'btn mt-0 checkbox bg-success'
         }
         
         
